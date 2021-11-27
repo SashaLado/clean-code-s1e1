@@ -12,42 +12,42 @@
   </div>
   <div class="main">
     <p id="section-add-item">
-      <label for="add-item__new-task">Add Item</label>
+      <label class="section-add-item__label" for="add-item__new-task">Add Item</label>
       <div class="add-item__wrapper">
-        <input id="add-item__new-task" class="task-item" type="text">
-        <button>Add</button>
+        <input id="add-item__new-task" class="task-item input" type="text">
+        <button class="button">Add</button>
       </div>
     </p>
-    <h3>Todo</h3>
-    <ul id="section-incomplete-tasks">
+    <h3 class="title">Todo</h3>
+    <ul class="section" id="section-incomplete-tasks">
       <li class="tasks-wrapper">
-        <input type="checkbox">
-          <label class="tasks-wrapper__task-item">Pay Bills</label>
-        <input type="text" class="tasks-wrapper__task-item">
-        <button class="tasks-wrapper__edit-button">Edit</button>
-        <button class="tasks-wrapper__delete-button">
-          <img src="remove.svg" alt="">
+        <input class="tasks-wrapper__input_checkbox input" type="checkbox">
+        <label class="tasks-wrapper__task-item tasks-wrapper__task-item_label">Pay Bills</label>
+        <input type="text" class="tasks-wrapper__task-item tasks-wrapper__task-item_input input">
+        <button class="tasks-wrapper__edit-button button">Edit</button>
+        <button class="tasks-wrapper__delete-button button">
+          <img class="tasks-wrapper__delete-button__icon" src="remove.svg" alt="">
         </button>
       </li>
       <li class="tasks-wrapper section-incomplete-tasks__edit-mode">
-        <input type="checkbox">
-          <label class="tasks-wrapper__task-item">Go Shopping</label>
-        <input type="text" value="go shopping" class="tasks-wrapper__task-item">
-        <button class="tasks-wrapper__edit-button">Save</button>
-        <button class="tasks-wrapper__delete-button">
-          <img src="remove.svg" alt="">
+        <input class="tasks-wrapper__input_checkbox input" type="checkbox">
+        <label class="tasks-wrapper__task-item tasks-wrapper__task-item_label">Go Shopping</label>
+        <input type="text" value="go shopping" class="tasks-wrapper__task-item tasks-wrapper__task-item_input input">
+        <button class="tasks-wrapper__edit-button button">Save</button>
+        <button class="tasks-wrapper__delete-button button">
+          <img class="tasks-wrapper__delete-button__icon" src="remove.svg" alt="">
         </button>
       </li>
     </ul>
-    <h3>Completed</h3>
-    <ul id="section-completed-tasks">
+    <h3 class="title">Completed</h3>
+    <ul class="section" id="section-completed-tasks">
       <li class="tasks-wrapper">
-        <input type="checkbox" checked>
-        <label class="tasks-wrapper__delete-button">See the Doctor</label>
-        <input type="text" class="tasks-wrapper__task-item">
-        <button class="tasks-wrapper__edit-button">Edit</button>
-        <button class="tasks-wrapper__delete-button">
-          <img src="remove.svg" alt="">
+        <input class="tasks-wrapper__input_checkbox input" type="checkbox" checked>
+        <label class="tasks-wrapper__task-item tasks-wrapper__task-item_label">See the Doctor</label>
+        <input type="text" class="tasks-wrapper__task-item tasks-wrapper__task-item_input input">
+        <button class="tasks-wrapper__edit-button button">Edit</button>
+        <button class="tasks-wrapper__delete-button button">
+          <img class="tasks-wrapper__delete-button__icon" src="remove.svg" alt="">
         </button>
       </li>
     </ul>

@@ -34,17 +34,27 @@ var createNewTaskElement=function(taskString){
 
     label.innerText=taskString;
     label.className='tasks-wrapper__task-item';
+    label.classList.add('tasks-wrapper__task-item_label')
 
     //Each elements, needs appending
     checkBox.type="checkbox";
+    checkBox.classList.add('tasks-wrapper__input_checkbox');
+    checkBox.classList.add('input');
     editInput.type="text";
     editInput.className="tasks-wrapper__task-item";
+    editInput.classList.add('tasks-wrapper__task-item_input');
+    editInput.classList.add('input');
+
 
     editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
     editButton.className="tasks-wrapper__edit-button";
+    editButton.classList.add('button');
+
 
     deleteButton.className="tasks-wrapper__delete-button";
+    deleteButton.classList.add('button');
     deleteButtonImg.src='./remove.svg';
+    deleteButtonImg.classList.add('tasks-wrapper__delete-button__icon')
     deleteButton.appendChild(deleteButtonImg);
 
 
@@ -64,7 +74,7 @@ var addTask=function(){
     //Create a new list item with the text from the #new-task:
     if (!taskInput.value) return;
     var listItem=createNewTaskElement(taskInput.value);
-
+    listItem.classList.add('tasks-wrapper');
     //Append listItem to incompleteTaskHolder
     incompleteTaskHolder.appendChild(listItem);
     bindTaskEvents(listItem, taskCompleted);
